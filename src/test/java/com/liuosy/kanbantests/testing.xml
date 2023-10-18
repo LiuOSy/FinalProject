@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "FunctionalTests">
+<test name="UITests">
+    <groups>
+        <run>
+            <include name="UITests"/>
+        </run>
+    </groups>
+    <classes>
+        <class name="com.liuosy.kanbantests.ui.LoginTest"/>
+        <class name="com.liuosy.kanbantests.ui.CreateNewProjectTest"/>
+        <class name="com.liuosy.kanbantests.ui.CreateTaskTest"/>
+        <class name="com.liuosy.kanbantests.ui.AddCommentToTheTaskTest"/>
+        <class name="com.liuosy.kanbantests.ui.CloseTheTaskTest"/>
+    </classes>
+</test>
+    <test name="APITests">
+        <groups>
+            <run>
+                <include name="APITests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.liuosy.kanbantests.api.UserCreationTest"/>
+            <class name="com.liuosy.kanbantests.api.UserRemovalTest"/>
+            <class name="com.liuosy.kanbantests.api.ProjectCreationTest"/>
+            <class name="com.liuosy.kanbantests.api.ProjectRemovalTest"/>
+            <class name="com.liuosy.kanbantests.api.TaskCreationTest"/>
+            <class name="com.liuosy.kanbantests.api.TaskRemovalTest"/>
+
+        </classes>
+    </test>
+</suite>
